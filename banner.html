@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Font Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <title>Perdigão na Brasa</title>
+</head>
+<body>
+    <div id="container-banner">
+        <h1>Manda Brasa com perdigão Na Brasa.</h1>
+        <img id="img-banner" src="/assets/images/perdigao_brasa.png" alt="">
+    </div>
+</body>
+</html>
+
+<style>
+    #container-banner{
+        height: 250px;
+        width: 970px;
+        background-color: rgb(184, 6 , 1);
+        display: flex;
+    }
+    #container-banner h1{
+        color: white;
+        text-align: center;
+        font-size: 51px;
+        width: 45%;
+        margin: 20px 5%;
+        font-family: 'Skranji', cursive;
+        animation-name: enter, exit;
+        animation-duration: 2s;
+    }
+    #img-banner{
+        position: relative;
+        width: 40%;
+        height: 50%;
+        margin-top: 60px;
+        -webkit-animation-name: enter, fadeOut;
+        animation-name: enter,fadeOut;
+        animation-duration: 2s, 4s;        
+    }
+    @keyframes enter{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes fadeOut {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes exit{
+        0%{
+            transform: translateX(100px);
+            animation-delay: 5s;
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    
+
+</style>
